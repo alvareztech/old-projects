@@ -6,3 +6,10 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+build.xml
+manifest.mf
+build-impl.xml
+genfiles.properties
+project.properties
+project.xml
