@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model modelID="fxc" modelVersion="56" rootInstance="DesignModel1" version="1">
+    <Instance classID="DesignModel" instanceID="DesignModel1">
+        <List name="stateVariables">
+            <Item value="inst:StateVariableModel1"/>
+            <Item value="inst:StateVariableModel2"/>
+        </List>
+        <List name="resources"/>
+        <List name="dataSources"/>
+        <List name="templates"/>
+        <Reference name="scene" value="inst:SceneModel1"/>
+        <Reference name="designWidth" value="flt:173.0"/>
+        <Reference name="designHeight" value="flt:220.0"/>
+        <Reference name="designProfile" value="profile:MOBILE"/>
+        <Reference name="synchronizeDeviceAndSceneSizes" value="bool:true"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel1">
+        <Reference name="instanceName" value="str:currentState"/>
+        <List name="states">
+            <Item value="inst:StateModel1"/>
+            <Item value="inst:StateModel2"/>
+            <Item value="inst:StateModel3"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel1"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="defaultInterpolator" value="interpolator:EASEBOTH"/>
+        <Reference name="defaultDuration" value="int:800"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel1">
+        <Reference name="stateName" value="str:Init"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel2">
+        <Reference name="stateName" value="str:Show"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel3">
+        <Reference name="stateName" value="str:Rotate"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel2">
+        <Reference name="instanceName" value="str:zoomState"/>
+        <List name="states">
+            <Item value="inst:StateModel4"/>
+            <Item value="inst:StateModel5"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel4"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="defaultInterpolator" value="interpolator:LINEAR"/>
+        <Reference name="defaultDuration" value="int:100"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel4">
+        <Reference name="stateName" value="str:Regular"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel5">
+        <Reference name="stateName" value="str:Zoomed"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="null"/>
+    </Instance>
+    <Instance classID="SceneModel" instanceID="SceneModel1">
+        <Reference name="instanceName" value="str:scene"/>
+        <List name="content">
+            <Item value="inst:HBoxModel1"/>
+            <Item value="inst:HBoxModel2"/>
+        </List>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:173.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:220.0,4,null,"/>
+        <Reference name="generateSceneInstance" value="bool:true"/>
+    </Instance>
+    <Instance classID="HBoxModel" instanceID="HBoxModel1">
+        <Reference name="instanceName" value="str:hbox"/>
+        <Reference name="translateY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:-50.0,24,inst:StateVariableModel1,16,inst:StateModel2,14,anim:,,flt:0.0,16,inst:StateModel3,14,anim:,,flt:0.0,"/>
+        <Reference name="scaleX" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel2,16,inst:StateModel5,14,anim:,,flt:1.5,"/>
+        <Reference name="scaleY" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel2,16,inst:StateModel5,14,anim:,,flt:1.5,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:27.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:21.0,4,null,"/>
+        <Reference name="onMouseEntered" value="prop2:7,NOT_SET,4,null,4,null,29,anim:,,str:hboxOnMouseEntered,4,null,"/>
+        <Reference name="onMouseExited" value="prop2:7,NOT_SET,4,null,4,null,28,anim:,,str:hboxOnMouseExited,4,null,"/>
+        <Reference name="pickOnBounds" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <List name="content">
+            <Item value="inst:LabelModel1"/>
+            <Item value="inst:LabelModel2"/>
+            <Item value="inst:LabelModel3"/>
+        </List>
+        <Reference name="spacing" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:6.0,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel1">
+        <Reference name="instanceName" value="str:label"/>
+        <Reference name="opacity" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,14,anim:,,flt:0.0,"/>
+        <Reference name="rotate" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,16,anim:,,flt:180.0,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,str:Hello,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel2">
+        <Reference name="instanceName" value="str:label2"/>
+        <Reference name="rotate" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,16,anim:,,flt:180.0,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,str:World,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel3">
+        <Reference name="instanceName" value="str:label3"/>
+        <Reference name="opacity" value="prop2:7,NOT_SET,4,null,4,null,23,anim:0,DISCRETE,flt:0.0,24,inst:StateVariableModel1,16,inst:StateModel3,14,anim:,,flt:1.0,"/>
+        <Reference name="rotate" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,16,anim:,,flt:180.0,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,str:Hello,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="HBoxModel" instanceID="HBoxModel2">
+        <Reference name="instanceName" value="str:hbox2"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:27.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:163.0,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <List name="content">
+            <Item value="inst:ButtonModel1"/>
+            <Item value="inst:ButtonModel2"/>
+        </List>
+        <Reference name="spacing" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:6.0,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel1">
+        <Reference name="instanceName" value="str:button"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel1,25,anim:0,DISCRETE,bool:true,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,24,anim:0,DISCRETE,str:Back,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,32,anim:0,DISCRETE,str:buttonAction,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel2">
+        <Reference name="instanceName" value="str:button2"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,4,null,4,null,24,inst:StateVariableModel1,16,inst:StateModel3,25,anim:0,DISCRETE,bool:true,"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,26,anim:0,DISCRETE,str:Rotate,24,inst:StateVariableModel1,16,inst:StateModel1,24,anim:0,DISCRETE,str:Show,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,33,anim:0,DISCRETE,str:button2Action,4,null,"/>
+    </Instance>
+</Model>

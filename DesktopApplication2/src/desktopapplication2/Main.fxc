@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model modelID="fxc" modelVersion="69" rootInstance="DesignModel1" version="1">
+    <Instance classID="DesignModel" instanceID="DesignModel1">
+        <List name="stateVariables">
+            <Item value="inst:StateVariableModel1"/>
+        </List>
+        <List name="resources"/>
+        <List name="dataSources"/>
+        <List name="templates"/>
+        <List name="customClasses"/>
+        <Reference name="scene" value="inst:SceneModel1"/>
+        <Reference name="designWidth" value="flt:480.0"/>
+        <Reference name="designHeight" value="flt:320.0"/>
+        <Reference name="designProfile" value="profile:DESKTOP"/>
+        <Reference name="synchronizeDeviceAndSceneSizes" value="bool:true"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel1">
+        <Reference name="instanceName" value="str:currentState"/>
+        <List name="states">
+            <Item value="inst:StateModel1"/>
+        </List>
+        <Reference name="startState" value="inst:StateModel1"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="doNotAnimateOnce" value="bool:true"/>
+        <Reference name="defaultInterpolator" value="interpolator:DISCRETE"/>
+        <Reference name="defaultDuration" value="int:0"/>
+        <Reference name="onTransitionFinished" value="null"/>
+    </Instance>
+    <Instance classID="StateModel" instanceID="StateModel1">
+        <Reference name="stateName" value="str:New State 1"/>
+        <Reference name="defaultInterpolator" value="null"/>
+        <Reference name="defaultDuration" value="int:1000"/>
+    </Instance>
+    <Instance classID="SceneModel" instanceID="SceneModel1">
+        <Reference name="instanceName" value="str:scene"/>
+        <List name="content">
+            <Item value="inst:ButtonModel1"/>
+            <Item value="inst:ChoiceBoxModel1"/>
+            <Item value="inst:ProgressIndicatorModel1"/>
+            <Item value="inst:TextBoxModel1"/>
+            <Item value="inst:ToolBarModel1"/>
+            <Item value="inst:ToggleButtonModel1"/>
+            <Item value="inst:ListViewModel1"/>
+            <Item value="inst:ListCellModel1"/>
+        </List>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:480.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,25,anim:0,DISCRETE,flt:320.0,4,null,"/>
+        <Reference name="generateSceneInstance" value="bool:true"/>
+        <Reference name="generateGetDesignSceneFunction" value="bool:true"/>
+        <Reference name="generateLayoutXYForRootLevelComponents" value="bool:true"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel1">
+        <Reference name="instanceName" value="str:button"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:148.0,24,inst:StateVariableModel1,16,inst:StateModel1,15,anim:,,flt:34.0,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:39.0,24,inst:StateVariableModel1,16,inst:StateModel1,15,anim:,,flt:53.0,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,str:Button,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ChoiceBoxModel" instanceID="ChoiceBoxModel1">
+        <Reference name="instanceName" value="str:choiceBox"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:307.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:47.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="items" value="prop2:7,NOT_SET,4,null,4,null,87,anim:,,sequence:10,str:La Paz9,str:Oruro10,str:Potosi14,str:Santa Cruz14,str:Cochabamba,4,null,"/>
+    </Instance>
+    <Instance classID="ProgressIndicatorModel" instanceID="ProgressIndicatorModel1">
+        <Reference name="instanceName" value="str:progressIndicator"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:293.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:99.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+    </Instance>
+    <Instance classID="TextBoxModel" instanceID="TextBoxModel1">
+        <Reference name="instanceName" value="str:textBox"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:46.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:32.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+    </Instance>
+    <Instance classID="ToolBarModel" instanceID="ToolBarModel1">
+        <Reference name="instanceName" value="str:toolBar"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:337.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <List name="items">
+            <Item value="inst:ButtonModel2"/>
+        </List>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel2">
+        <Reference name="instanceName" value="str:button2"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,str:Button,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ToggleButtonModel" instanceID="ToggleButtonModel1">
+        <Reference name="instanceName" value="str:toggleButton"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:116.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:106.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,24,anim:,,str:Toggle Button,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ListViewModel" instanceID="ListViewModel1">
+        <Reference name="instanceName" value="str:listView"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:201.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:159.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="items" value="prop2:7,NOT_SET,4,null,4,null,55,anim:,,sequence:10,str:Item 110,str:Item 210,str:Item 3,4,null,"/>
+    </Instance>
+    <Instance classID="ListCellModel" instanceID="ListCellModel1">
+        <Reference name="instanceName" value="str:listCell"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:55.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:170.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="node" value="null"/>
+    </Instance>
+</Model>
