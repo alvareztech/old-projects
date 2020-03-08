@@ -1,0 +1,20 @@
+/* 
+    Document   : ejemploCss
+    Created on : 23-10-2010, 09:05:48 PM
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+.titulo {
+    color: blue
+}
+

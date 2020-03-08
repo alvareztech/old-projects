@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font: 62.5% Arial, Verdana, sans-serif;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+.poema {
+  margin: 0 2em;
+}
+.enfatizar {
+  font-style: italic;
+  border: 1px solid #888;
+  padding: 0.5em;
+}

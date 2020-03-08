@@ -1,0 +1,22 @@
+/* 
+    Document   : estilos
+    Created on : 05-04-2011, 08:53:04 PM
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+p {
+    background: darkviolet;
+    border-spacing: 2 inhe
+}
+

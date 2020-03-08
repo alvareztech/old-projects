@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function validar() {
+                alert("holas");
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Formulario</h1>
+        <form name="formEstudiante" method="POST" onsubmit="validar()">
+            <table border="0" align="center">
+                <tbody>
+                    <tr>
+                        <td align="right">Nombre</td>
+                        <td><input type="text" name="txtNombre" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Apellido Materno</td>
+                        <td><input type="text" name="txtPaterno" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Apellido Materno</td>
+                        <td><input type="text" name="txtMaterno" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td align="right">CI</td>
+                        <td><input type="text" name="txtCi" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Sexo</td>
+                        <td>
+                            <input type="radio" name="radioSexo" value="masculino" />masculino
+                            <input type="radio" name="radioSexo" value="femenino" />femenino
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td align="right">Departamento</td>
+                        <td>
+                            <select name="listDepartamenteo">
+                                <option>La Paz</option>
+                                <option>Cochabamba</option>
+                                <option>Santa Cruz</option>
+                                <option>Oruro</option>
+                                <option>Potosi</option>
+                                <option>Tarija</option>
+                                <option>Chuquisaca</option>
+                                <option>Beni</option>
+                                <option>Pando</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Estudios</td>
+                        <td>
+                            <input type="checkbox" name="cbxUniversitario" value="ON" />Sin estudios<br />
+                            <input type="checkbox" name="cbxUniversitario" value="OFF" />Escolar<br />
+                            <input type="checkbox" name="cbxUniversitario" value="OFF" />Colegial<br />
+                            <input type="checkbox" name="cbxUniversitario" value="OFF" />Universitario<br />
+                            <input type="checkbox" name="cbxUniversitario" value="OFF" />Profesional<br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Comentarios</td>
+                        <td>
+                            <textarea name="txtComentarios" rows="4" cols="20"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Aceptar" name="btnAceptar" />
+                            <input type="reset" value="Limpiar" name="btnLimpiar" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

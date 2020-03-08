@@ -23,3 +23,4 @@ proguard.cfg
 nbproject/
 twitterwhatareyoudoingserviceauthenticator.properties
 dist-*/
+dist.rar
