@@ -20,3 +20,5 @@ ant.properties
 gen/
 local.properties
 proguard.cfg
+nbproject/
+twitterwhatareyoudoingserviceauthenticator.properties
