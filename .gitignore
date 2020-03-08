@@ -13,3 +13,10 @@ build-impl.xml
 genfiles.properties
 project.properties
 project.xml
+bin/
+*.class
+ant.properties
+*.apk
+gen/
+local.properties
+proguard.cfg
