@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:text="Inicio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/botonFechaInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:onClick="abrirDialogoFechaInicio"
+            android:text="Fecha" />
+
+        <Button
+            android:id="@+id/botonHoraInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:onClick="abrirDialogoHoraInicio"
+            android:text="Hora" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="5sp"
+        android:text="Fin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/botonFechaFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:onClick="abrirDialogoFechaFin"
+            android:text="Fecha" />
+
+        <Button
+            android:id="@+id/botonHoraFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="1"
+            android:onClick="abrirDialogoHoraFin"
+            android:text="Hora" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/botonAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5sp"
+            android:onClick="mostrarMapa"
+            android:text="Mostrar Mapa" />
+    </RelativeLayout>
+
+</LinearLayout>
