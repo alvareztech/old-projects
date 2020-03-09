@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="celeste">#0099CC</drawable>
+    <drawable name="celeste_claro">#33B5E5</drawable>
+    <drawable name="lila">#9933CC</drawable>
+    <drawable name="lila_claro">#AA66CC</drawable>
+    <drawable name="verde">#669900</drawable>
+    <drawable name="verde_claro">#99CC00</drawable>
+    <drawable name="naranja">#FF8800</drawable>
+    <drawable name="naranja_claro">#FFBB33</drawable>
+    <drawable name="rojo">#CC0000</drawable>
+    <drawable name="rojo_claro">#FF4444</drawable>
+    <drawable name="blanco">#FFFFFF</drawable>
+    <drawable name="negro">#000000</drawable>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/botonFino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="usarProveedorFino"
+        android:text="@string/usar_proveedor_fino" android:background="@drawable/degradado_celeste" android:layout_margin="3dp"/>
+
+    <Button
+        android:id="@+id/botonAmbos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="usarAmbosProveedores"
+        android:text="@string/usar_ambos_proveedores" android:background="@drawable/degradado_celeste" android:layout_margin="3dp"/>
+
+    <TextView
+        android:id="@+id/textoTituloLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitud"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textoLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textoTituloLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitud"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textoLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textoTituloDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/direccion"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textoDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

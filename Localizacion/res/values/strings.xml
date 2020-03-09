@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Localización</string>
+    <string name="direccion">Dirección</string>
+    <string name="habilitar_gps">Habilitar GPS</string>
+    <string name="desea_habilitar_gps">El GPS no es soportado. ¿Desea habilitarlo?</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="desconocido">Desconocido</string>
+    <string name="gps_no_soportado">El GPS no es soportado</string>
+    <string name="red_no_soportado">La RED no es soportada</string>
+    <string name="usar_proveedor_fino">Usar el proveedor fino</string>
+    <string name="usar_ambos_proveedores">Usar ambos proveedores</string>
+
+</resources>

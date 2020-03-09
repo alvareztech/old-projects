@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="irMonoblock"
+            android:text="Monoblock" />
+
+        <Button
+            android:id="@+id/boton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="irCotaCota"
+            android:text="Campus Cota Cota" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="cambiarModo"
+        android:text="Satelite" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0OCH-YNJ5jSOUxuo438JxDesoB4KqHnqH5mf_UQ"
+        android:clickable="true" />
+
+</LinearLayout>
