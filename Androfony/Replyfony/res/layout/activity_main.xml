@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco1"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- INICIO DE TARJETAS -->
+            <!-- FICHA DE TEMPERATURA -->
+
+            <LinearLayout
+                android:id="@+id/layoutA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen_ficha"
+                android:background="@drawable/fondo_tarjeta"
+                android:orientation="vertical"
+                android:padding="@dimen/margen_ficha_adentro" >
+
+                <TextView
+                    android:id="@+id/tituloTemperatura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tituloPorDefecto"
+                    android:textColor="@color/rojo_claro"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imagenTemperatura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/descripcionPorDefecto"
+                            android:src="@drawable/cero" />
+
+                        <TextView
+                            android:id="@+id/textoEstadoTemperatura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estadoPorDefecto"
+                            android:textColor="@color/negro1" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textoNumeroTemperatura"
+                        android:layout_width="0dp"
+                        android:minWidth="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/temperaturaPorDefecto"
+                        android:textColor="@color/negro2"
+                        android:textSize="65sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FICHA MAPA -->
+
+            <LinearLayout
+                android:id="@+id/layoutB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen_ficha"
+                android:background="@drawable/fondo_tarjeta"
+                android:orientation="vertical"
+                android:padding="@dimen/margen_ficha_adentro" >
+
+                <TextView
+                    android:id="@+id/textoTituloMapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tituloPorDefecto"
+                    android:textColor="@color/rojo_claro"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textoSubtituloMapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/tituloPorDefecto"
+                    android:textColor="@color/negro1"
+                    android:textSize="18sp" />
+
+                <com.google.android.maps.MapView
+                    android:id="@+id/mapa"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:apiKey="0OCH-YNJ5jSPZqotDzU2Yig2m_SDfAL0QWIP0ew" />
+            </LinearLayout>
+
+            <!-- FICHA RESULTADO -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen_ficha"
+                android:background="@drawable/fondo_tarjeta"
+                android:orientation="vertical"
+                android:padding="@dimen/margen_ficha_adentro" >
+
+                <TextView
+                    android:id="@+id/textoTituloPartido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tituloPorDefecto"
+                    android:textColor="@color/rojo_claro"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textoSubtituloPartido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/tituloPorDefecto"
+                    android:textColor="@color/negro1"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|bottom"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imagenEquipo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/descripcionPorDefecto"
+                            android:src="@drawable/bolivar" />
+
+                        <TextView
+                            android:id="@+id/textoEquipo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tituloPorDefecto" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="VS"
+                        android:textColor="@color/rojo_claro"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imagenEquipo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/descripcionPorDefecto"
+                            android:src="@drawable/strongest" />
+
+                        <TextView
+                            android:id="@+id/textoEquipo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tituloPorDefecto" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FICHA ACCIDENTES TRANSITO -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen_ficha"
+                android:background="@drawable/fondo_tarjeta"
+                android:orientation="vertical"
+                android:padding="@dimen/margen_ficha_adentro" >
+
+                <TextView
+                    android:id="@+id/textoTituloAccidentes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tituloPorDefecto"
+                    android:textColor="@color/rojo_claro"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textoDescripcionAccidentes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/tituloPorDefecto"
+                        android:textColor="@color/negro1"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/descripcionPorDefecto"
+                        android:src="@drawable/choque" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FIN DE TARJETAS -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_boton"
+            android:contentDescription="@string/descripcionPorDefecto"
+            android:onClick="creditos"
+            android:src="@drawable/replyfony"
+            android:textColor="@color/blanco1" />
+
+        <ImageButton
+            android:id="@+id/btnVoz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/fondo_boton"
+            android:contentDescription="@string/descripcionPorDefecto"
+            android:src="@drawable/ic_action_microfono"
+            android:textColor="@color/blanco1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/fondo_boton"
+            android:contentDescription="@string/descripcionPorDefecto"
+            android:onClick="iniciarCheckIn"
+            android:src="@drawable/ic_action_flechas"
+            android:textColor="@color/blanco1" />
+    </LinearLayout>
+
+</LinearLayout>

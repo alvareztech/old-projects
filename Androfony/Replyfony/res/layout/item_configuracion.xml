@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen_ficha"
+        android:background="@drawable/fondo_tarjeta"
+        android:orientation="horizontal"
+        android:padding="@dimen/margen_ficha_adentro" >
+
+        <ImageView
+            android:id="@+id/imagenItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/descripcionPorDefecto"
+            android:src="@drawable/ic_action_lugar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textoTituloItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloPorDefecto"
+                android:textColor="@color/rojo_claro"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textoSubtituloItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloPorDefecto"
+                android:textColor="@color/negro1"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

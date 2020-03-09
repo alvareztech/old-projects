@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen_ficha">10dp</dimen>
+    <dimen name="margen_ficha_adentro">10dp</dimen>
+    
+</resources>

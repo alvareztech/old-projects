@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Replyfony</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="futbol">Fútbol</string>
+    <string name="cero">0</string>
+    <string name="dos">2</string>
+    <string name="versus">VS</string>
+    <string name="temperaturaPorDefecto">37°</string>
+    <string name="descripcionPorDefecto">Esto es una descripción</string>
+    <string name="diaPorDefecto">MIE</string>
+    <string name="estadoPorDefecto">Nublado</string>
+    <string name="tituloPorDefecto">La Paz</string>
+    <string name="gpsNoSoportado">GPS no soportado.</string>
+    <string name="redNoSoportado">RED no soportado.</string>
+    <string name="configuraciones">Configuraciones</string>
+    <string name="descripcion">Descripción</string>
+
+</resources>

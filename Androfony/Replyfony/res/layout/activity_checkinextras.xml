@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/textoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/tituloPorDefecto"
+            android:textColor="@color/rojo_claro"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/cajaDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/descripcion"
+            android:inputType="textMultiLine"
+            android:lines="3" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/botonImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="abrirCamara"
+            android:padding="15dp"
+            android:src="@drawable/ic_action_camara" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_boton"
+            android:drawableTop="@drawable/ic_action_cancel"
+            android:onClick="cancelar"
+            android:text="@android:string/cancel"
+            android:textColor="@color/blanco1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_boton"
+            android:drawableTop="@drawable/ic_action_ok"
+            android:onClick="aceptar"
+            android:text="@android:string/ok"
+            android:textColor="@color/blanco1" />
+    </LinearLayout>
+
+</LinearLayout>
