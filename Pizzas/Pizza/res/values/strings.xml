@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pizza</string>
+    <string name="la_pizza_original">La mejor pizza</string>
+    <string name="mr_pizza">Mr. Pizza</string>
+    <string name="sucursal">Sucursal</string>
+    <string name="telefono1">2111361</string>
+    <string name="telefono2">2111222</string>
+    <string name="telefono3">2110311</string>
+    
+    
+    <string name="pedir">Hacer pedido</string>
+    <string name="ver_carta">Ver carta</string>
+    <string name="localizar">Ver restaurantes</string>
+    <string name="obtener_promocion">Obtener promoción</string>
+    
+    <string name="gps_no_soportado">GPS no soportado</string>
+    <string name="red_no_soportado">RED no soportado</string>
+
+</resources>

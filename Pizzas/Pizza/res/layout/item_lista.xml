@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/boton_verde" >
+
+    <ImageView
+        android:id="@+id/imagen_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/titulo_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imagen_item"
+        android:shadowColor="@color/naranja"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"
+        android:text="Titulo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/rojo" />
+
+    <TextView
+        android:id="@+id/subtitulo_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo_item"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/imagen_item"
+        android:paddingBottom="10dp"
+        android:text="Subtitulo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blanco" />
+
+</RelativeLayout>
